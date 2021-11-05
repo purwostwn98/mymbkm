@@ -35,7 +35,7 @@
                                                 <td>Pengenalan Lingkungan</td>
                                                 <td>Mengenal perusahaan dengan keliling dan penjelasan pembimbing lapangan.</td>
                                                 <td class="text-center">
-                                                    <a href="/mahasiswa/progress" style="font-size: 12px;" class=" btn-small btn btn-info">Lihat</a>
+                                                    <a href="<?= base_url(); ?>/img/foto_logbook.jpg" target="_blank" style="font-size: 12px;" class=" btn-small btn btn-info">Lihat</a>
                                                 </td>
                                             </tr>
                                             <tr role="row" class="odd">

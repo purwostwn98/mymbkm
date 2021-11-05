@@ -28,7 +28,7 @@
                                             <tr role="row" class="odd">
                                                 <td class="sorting_1 text-center">1</td>
                                                 <td>Danur</td>
-                                                <td>D200160125</td>
+                                                <td>D600160125</td>
                                                 <td>3-11-2021</td>
                                                 <td class="text-center">Magang Kementrian BUMN</td>
                                                 <td class="text-center">MBKM Magang</td>
@@ -39,7 +39,7 @@
                                             <tr role="row" class="odd">
                                                 <td class="sorting_1 text-center">2</td>
                                                 <td>Sitie</td>
-                                                <td>D100018999</td>
+                                                <td>D600018999</td>
                                                 <td>3-11-2021</td>
                                                 <td class="text-center">Mengajar di Sekolah OPQ</td>
                                                 <td class="text-center">MBKM Kampus Mengajar</td>

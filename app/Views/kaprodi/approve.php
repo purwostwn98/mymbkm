@@ -183,6 +183,28 @@
                 2021/2022
             </div>
         </div>
+        <hr class="m-0 p-1">
+        <div class="row bg-white darker">
+            <div class="col-md-4">
+                <label for="">
+                    <b>Tgl Mulai</b>
+                </label>
+            </div>
+            <div class="col-md-8">
+                3 Desember 2021
+            </div>
+        </div>
+        <hr class="m-0 p-1">
+        <div class="row bg-white darker">
+            <div class="col-md-4">
+                <label for="">
+                    <b>Tgl Selesai</b>
+                </label>
+            </div>
+            <div class="col-md-8">
+                30 Maret 2022
+            </div>
+        </div>
     </div>
 </div>
 

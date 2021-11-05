@@ -2,7 +2,7 @@
 <?= $this->section("konten"); ?>
 <div class="row d-sm-flex align-items-center justify-content-between mb-4">
     <div class="col-lg-4">
-        <h1 class="h3 mb-0 text-gray-800">Statistik | Teknik Mesin</h1>
+        <h1 class="h3 mb-0 text-gray-800">Statistik | Teknik Industri</h1>
     </div>
     <div class="col-auto">
         <div class="row">
