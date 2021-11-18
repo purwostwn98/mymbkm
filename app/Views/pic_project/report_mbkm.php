@@ -41,6 +41,10 @@
                             <textarea class="form-control" id="ketRecKesra" name="ketRecKesra" rows="3"></textarea>
                         </div>
                         <div class="form-group">
+                            <label for="inputAddress2">Batas Pendaftaran</label>
+                            <input type="date" class="form-control" id="inputAddress2" name="tgAkhir" required>
+                        </div>
+                        <div class="form-group">
                             <label for="inputAddress2">Status</label>
                             <select id="approval" class="form-control" name="persetujuan" onchange="getval(this);">
                                 <option selected value="">Aktif</option>
@@ -88,14 +92,14 @@
                                                 <td>Magang Perusahaan Z</td>
                                                 <td>MBKM Magang</td>
                                                 <td>Ir. Setia, Ph.D</td>
-                                                <td class="text-center">2021/2022-1</td>
+                                                <td class="text-center">2021.2</td>
                                                 <td class="text-center">439</td>
                                                 <td class="text-center">101</td>
                                                 <td class="text-center">5</td>
                                                 <td class="text-center">8</td>
                                                 <td class="text-center">10</td>
                                                 <td class="text-center">
-                                                    <button data-toggle="modal" data-target="#detailModal" style="font-size: 12px;" class="btn-small btn btn-info">Detail</button>
+                                                    <button data-toggle="modal" data-target="#detailModal" style="font-size: 12px;" class="btn-small btn btn-warning">Edit</button>
                                                 </td>
                                             </tr>
                                             <tr role="row" class="odd">
@@ -103,14 +107,14 @@
                                                 <td>Magang Pertamini</td>
                                                 <td>MBKM Magang</td>
                                                 <td>Dr. Kipli </td>
-                                                <td class="text-center">2021/2022-1</td>
+                                                <td class="text-center">2021.2</td>
                                                 <td class="text-center">98</td>
                                                 <td class="text-center">50</td>
                                                 <td class="text-center">20</td>
                                                 <td class="text-center">13</td>
                                                 <td class="text-center">10</td>
                                                 <td class="text-center">
-                                                    <a href="/koordinator/detailProgram" style="font-size: 12px;" class=" btn-small btn btn-info">Detail</a>
+                                                    <a data-toggle="modal" data-target="#detailModal" href="/koordinator/detailProgram" style="font-size: 12px;" class=" btn-small btn btn-warning">Edit</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -139,7 +143,7 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="inputAddress">Nama Project</label>
-                        <input type="text" class="form-control" id="inputAddress" name="tgAwal" value="MBKM Pertukaran Pelajar" readonly>
+                        <input type="text" class="form-control" id="inputAddress" name="tgAwal" value="MBKM Pertukaran Pelajar">
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Project Category</label>
@@ -149,20 +153,24 @@
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Tahun Ajaran</label>
-                        <input type="text" class="form-control" id="inputAddress2" name="tgAkhir" value="2021-2022-1" readonly>
+                        <input type="text" class="form-control" id="inputAddress2" name="tgAkhir" value="2021.1">
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Deskripsi</label>
-                        <textarea class="form-control" id="ketRecKesra" name="ketRecKesra" rows="3" readonly>Pertukaran Pelajar dengan universitas di Jakarta ini merupakan ...
+                        <textarea class="form-control" id="ketRecKesra" name="ketRecKesra" rows="3">Pertukaran Pelajar dengan universitas di Jakarta ini merupakan ...
                         </textarea>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Syarat</label>
-                        <textarea class="form-control" id="ketRecKesra" name="ketRecKesra" rows="3" readonly>
+                        <textarea class="form-control" id="ketRecKesra" name="ketRecKesra" rows="3">
                             1. Min. Semester 7
                             2. IPK min. 3.5
                             3. Telah menempuh min. 100 sks
                         </textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Batas Pendaftaran</label>
+                        <input type="date" class="form-control" id="inputAddress2" name="tgAkhir" value="2022-07-22">
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Status</label>

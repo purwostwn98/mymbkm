@@ -131,14 +131,62 @@
 </div>
 
 <div class="row">
-    <div class="col-lg-12 mb-4">
+    <div class="col-lg-6 mb-4">
         <div class="card shadow mb-4">
             <div class="card-header  bg-primary py-3">
-                <h6 class="m-0 font-weight-bold text-white">Statistik Berdasarkan Project</h6>
+                <h6 class="m-0 font-weight-bold text-white">Statistik Project (On Going)</h6>
             </div>
             <div class="card-body">
                 <div class="chart-pie pt-4 pb-2">
                     <canvas id="pieMitra2"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 mb-4">
+        <div class="card shadow mb-4">
+            <div class="card-header  bg-primary py-3">
+                <h6 class="m-0 font-weight-bold text-white">Statistik Project (Lulus)</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-pie pt-4 pb-2">
+                    <canvas id="pieMitra3"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card shadow mb-4">
+            <div class="card-header  bg-primary py-3">
+                <h6 class="m-0 font-weight-bold text-white">Statistik Mahasiswa MBKM</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-pie pt-4 pb-2">
+                    <canvas id="pieMitra4"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card shadow mb-4">
+            <div class="card-header  bg-primary py-3">
+                <h6 class="m-0 font-weight-bold text-white">Time Series Peserta MBKM</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                            <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                            <div class=""></div>
+                        </div>
+                    </div>
+                    <canvas id="myAreaChart" width="333" height="160" style="display: block; width: 333px; height: 160px;" class="chartjs-render-monitor"></canvas>
                 </div>
             </div>
         </div>
@@ -148,7 +196,7 @@
 
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script>
-    // Pie chart per fakultas
+    // Pie chart per project
     var ctx = document.getElementById("pieMitra2");
     var pieMitra2 = new Chart(ctx, {
         type: 'doughnut',
@@ -186,5 +234,78 @@
             cutoutPercentage: 80,
         },
     });
+
+    var ctx = document.getElementById("pieMitra3");
+    var pieMitra3 = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: [
+                'MBKM Magang',
+                'MBKM Pertukaran Pelajar',
+                'MBKM KKN Tematik',
+                'MBKM Kewirausahaan',
+                'MBKM Penelitian',
+                'MBKM Pengabdian Masyarakat'
+            ],
+            datasets: [{
+                data: [20, 10, 5, 7, 2, 8],
+                backgroundColor: ['#e74a3b', '#1cc88a', '#36b9cc', '#f6c23e'],
+                hoverBackgroundColor: ['#6b231c', '#0c5c3f', '#2c9faf', '#947526'],
+                hoverBorderColor: "rgba(234, 236, 244, 1)",
+            }],
+        },
+        options: {
+            maintainAspectRatio: false,
+            tooltips: {
+                backgroundColor: "rgb(255,255,255)",
+                bodyFontColor: "#858796",
+                borderColor: '#dddfeb',
+                borderWidth: 1,
+                xPadding: 15,
+                yPadding: 15,
+                displayColors: false,
+                caretPadding: 10,
+            },
+            legend: {
+                display: true
+            },
+            cutoutPercentage: 80,
+        },
+    });
+
+    var ctx = document.getElementById("pieMitra4");
+    var pieMitra4 = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: [
+                'Mahasiswa MBKM',
+                'Mahasiswa non-MBKM',
+            ],
+            datasets: [{
+                data: [78, 619],
+                backgroundColor: ['#e74a3b', '#1cc88a'],
+                hoverBackgroundColor: ['#6b231c', '#0c5c3f'],
+                hoverBorderColor: "rgba(234, 236, 244, 1)",
+            }],
+        },
+        options: {
+            maintainAspectRatio: false,
+            tooltips: {
+                backgroundColor: "rgb(255,255,255)",
+                bodyFontColor: "#858796",
+                borderColor: '#dddfeb',
+                borderWidth: 1,
+                xPadding: 15,
+                yPadding: 15,
+                displayColors: false,
+                caretPadding: 10,
+            },
+            legend: {
+                display: true
+            },
+            cutoutPercentage: 80,
+        },
+    });
 </script>
+<script src="js/demo/chart-area-demo.js"></script>
 <?= $this->endSection(); ?>

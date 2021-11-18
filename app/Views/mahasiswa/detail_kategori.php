@@ -110,8 +110,6 @@
                                                         <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 30px;">Nama Project</th>
                                                         <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">TA</th>
                                                         <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">Batas Daftar</th>
-                                                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">Tg. Mulai</th>
-                                                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">Tg. Selesai</th>
                                                         <th aria-controls="dataTable" rowspan="1" colspan="2" style="width: 80px;">Aksi</th>
                                                     </tr>
                                                 </thead>
@@ -119,10 +117,8 @@
                                                     <tr role="row" class="odd">
                                                         <td class="sorting_1 text-center">1</td>
                                                         <td>Magang Perusahaan Z</td>
-                                                        <td class="text-center">2021/2022-1</td>
+                                                        <td class="text-center">2022.2</td>
                                                         <td class="text-center">25 Desember 2021</td>
-                                                        <td class="text-center">2 Januari 2022</td>
-                                                        <td class="text-center">30 Juli 2022</td>
                                                         <td style="width: 40px;" class="text-center">
                                                             <button data-toggle="modal" data-target="#detailModal" style="font-size: 12px;" class="btn-small btn btn-info">Detail</button>
                                                         </td>
@@ -133,10 +129,8 @@
                                                     <tr role="row" class="odd">
                                                         <td class="sorting_1 text-center">2</td>
                                                         <td>Magang Pertamini</td>
-                                                        <td class="text-center">2021/2022-1</td>
+                                                        <td class="text-center">2022.2</td>
                                                         <td class="text-center">30 Desember 2021</td>
-                                                        <td class="text-center">2 Februari 2022</td>
-                                                        <td class="text-center">30 Agustus 2022</td>
                                                         <td style="width: 40px;" class="text-center">
                                                             <button data-toggle="modal" data-target="#detailModal" style="font-size: 12px;" class="btn-small btn btn-info">Detail</button>
                                                         </td>
@@ -192,7 +186,7 @@
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Tahun Ajaran</label>
-                        <input type="text" class="form-control" id="inputAddress2" name="tgAkhir" value="2021-2022-1" readonly>
+                        <input type="text" class="form-control" id="inputAddress2" name="tgAkhir" value="2021.2" readonly>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Batas Pendaftaran</label>

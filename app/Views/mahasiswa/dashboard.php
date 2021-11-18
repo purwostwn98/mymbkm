@@ -21,7 +21,15 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col">
-                        <p class="mb-0"><b>Magang Perusahaan OPQ</b></p>
+                        <p class="mb-0 text-primary"><b>Informasi Ajuan</b></p>
+                        <p class="mt-0">Selamat Anda <b>direkomendasikan</b> Ketua Program Studi untuk mendaftar program MBKM. Download surat rekomendasi di detail riwayat ajuan!
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-0 text-info"><b>Magang Perusahaan OPQ</b></p>
                         <p class="mt-0">Bagi mahasiswa yang ingin mendaftar magang di perusahaan X, mohon segera melengkapi dokumen paling lambat tanggal
                             1 Desember 2021.
                         </p>
@@ -29,7 +37,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p class="mb-0"><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b></p>
+                        <p class="mb-0 text-info"><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b></p>
                         <p class="mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium libero nulla repudiandae accusantium molestias aut quibusdam ut, quis laboriosam asperiores magni ea fugiat dicta saepe. Mollitia libero ut labore ratione.
                         </p>
                     </div>

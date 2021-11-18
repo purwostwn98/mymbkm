@@ -48,12 +48,10 @@
                 <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                     <div class="timeline-arrow"></div>
                     <a class="h5 mb-0 text-warning">Upload LOA</a><br>
-                    <form>
-                        <div class="form-group text-small mt-2 font-weight-light">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                    </form>
-                    <a href="#" target="_blank" style="font-size: 12px;" class="btn-small btn btn-warning">Unggah</a>
+                    <span style="border-radius: 5px;" class="small text-white bg-info p-1">Jika mahasiswa tidak upload LoA setelah 3 (tiga) bulan maka dianggap ditolak mitra</span>
+                    <br><br>
+                    <a href="#" target="_blank" style="font-size: 12px;" class="btn-small btn btn-primary" data-toggle="modal" data-target="#filterLOA">Unggah</a>
+                    <a href="#" target="_blank" style="font-size: 12px;" class="btn-small btn btn-danger">Ditolak Mitra</a>
                 </li>
                 <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                     <div class="timeline-arrow"></div>
@@ -69,19 +67,20 @@
                 </li>
                 <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                     <div class="timeline-arrow"></div>
-                    <a class="h5 mb-0 text-warning">Program Berjalan</a><br>
+                    <a class="h5 mb-0 text-warning">Kegiatan MBKM</a><br>
                     <p class="text-small mt-2 font-weight-light">Selama program berjalan peserta dapat mengisi log book melalu tombol di bawah ini.</p>
                     <a href="/mahasiswa/logbook" target="_blank" style="font-size: 12px;" class="btn-small btn btn-warning">Log Book</a>
                 </li>
                 <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                     <div class="timeline-arrow"></div>
-                    <a class="h5 mb-0 text-warning">Unggah Nilai</a><br>
+                    <a class="h5 mb-0 text-warning">Unggah Nilai Mitra atau Sertifikat</a><br>
                     <form>
                         <div class="form-group text-small mt-2 font-weight-light">
                             <input type="file" class="form-control-file" id="exampleFormControlFile1">
                         </div>
                     </form>
                     <a href="#" target="_blank" style="font-size: 12px;" class="btn-small btn btn-warning">Unggah</a>
+
                 </li>
                 <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                     <div class="timeline-arrow"></div>
@@ -162,6 +161,43 @@
                         </div>
                         <div class="col-md-8">
                             24 Desember 2021
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <a href="#" role="button" class="btn btn-success">Submit</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-lg" id="filterLOA" tabindex="-1" role="dialog" aria-labelledby="filterLOALabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-info">
+                <h5 class="modal-title text-white" id="filterModalLabel"><strong>Unggah LOA</strong></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="POST" id="formFilter" action="#">
+                <?= csrf_field(); ?>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputAddress">Tanggal Mulai</label>
+                        <input type="date" class="form-control" id="inputAddress" name="tgAwal" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Tanggal Selesai</label>
+                        <input type="date" class="form-control" id="inputAddress2" name="tgAkhir" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Upload LoA</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                            <label class="custom-file-label" for="validatedCustomFile">LoA</label>
                         </div>
                     </div>
                 </div>

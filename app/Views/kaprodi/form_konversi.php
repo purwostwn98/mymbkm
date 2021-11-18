@@ -176,6 +176,19 @@
         <div class="row bg-white darker">
             <div class="col-md-4">
                 <label for="">
+                    <b>Panduan Project</b>
+                </label>
+            </div>
+            <div class="col-md-8">
+                <a href="<?= base_url(); ?>/document/MBKM_magang.pdf" class="btn btn-success btn-sm btn-icon-split mb-2" target="_blank">
+                    <span class="icon text-white-50"> <i class="fas fa-check"></i></span><span class="text">Lihat</span>
+                </a>
+            </div>
+        </div>
+        <hr class="m-0 p-1">
+        <div class="row bg-white darker">
+            <div class="col-md-4">
+                <label for="">
                     <b>Kurun Pelaksanaan</b>
                 </label>
             </div>

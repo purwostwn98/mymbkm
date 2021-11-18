@@ -106,7 +106,7 @@
                 </label>
             </div>
             <div class="col-md-8">
-                2021/2022
+                2021.2
             </div>
         </div>
         <hr class="m-0 p-1">
