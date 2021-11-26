@@ -22,10 +22,10 @@
                             <label for="inputAddress">Nama Kategori</label>
                             <input type="text" class="form-control" id="inputAddress" name="tgAwal" required>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="inputAddress2">Tahun Ajaran</label>
                             <input type="text" class="form-control" id="inputAddress2" name="tgAkhir" required>
-                        </div>
+                        </div> -->
                         <div class="form-group">
                             <label for="inputAddress2">Deskripsi</label>
                             <textarea class="form-control" id="ketRecKesra" name="ketRecKesra" rows="3"></textarea>
@@ -78,13 +78,12 @@
                                                 <th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 10px;">No</th>
                                                 <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">Proj. Category</th>
                                                 <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">Proj. Koordinator</th>
-                                                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">TA</th>
                                                 <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">Jml. Pendaftar</th>
-                                                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">Lulus</th>
+                                                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 35px;">Lulus</th>
                                                 <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">On Going</th>
-                                                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">On Progress</th>
-                                                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 45px;">Ditolak</th>
-                                                <th aria-controls="dataTable" rowspan="1" colspan="1" style="width: 10px;">Aksi</th>
+                                                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 35px;">On Progress</th>
+                                                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 35px;">Ditolak</th>
+                                                <th aria-controls="dataTable" rowspan="1" colspan="1" style="width: 60px;">Aksi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -92,42 +91,75 @@
                                                 <td class="sorting_1 text-center">1</td>
                                                 <td>MBKM Pertukaran Pelajar</td>
                                                 <td>Ir. Setia, Ph.D</td>
-                                                <td class="text-center">2021/2022</td>
                                                 <td class="text-center">439</td>
                                                 <td class="text-center">101</td>
                                                 <td class="text-center">5</td>
                                                 <td class="text-center">8</td>
                                                 <td class="text-center">10</td>
                                                 <td class="text-center">
-                                                    <a href="/kaprodi/detailCategory" style="font-size: 12px;" class=" btn-small btn btn-info">Detail</a>
+                                                    <div class="row align-content-center">
+                                                        <div class="col">
+                                                            <a href="/kaprodi/detailCategory" class="btn btn-info btn-circle btn-sm">
+                                                                <i class="fas fa-info-circle"></i>
+                                                            </a> &nbsp;
+                                                            <a href="#" class="btn btn-warning btn-circle btn-sm">
+                                                                <i class="far fa-edit"></i>
+                                                            </a> &nbsp;
+                                                            <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                                                <i class="fas fa-trash"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td class="sorting_1 text-center">2</td>
                                                 <td>MBKM Magang</td>
                                                 <td>Dr. Kipli </td>
-                                                <td class="text-center">2021/2022</td>
                                                 <td class="text-center">98</td>
                                                 <td class="text-center">50</td>
                                                 <td class="text-center">20</td>
                                                 <td class="text-center">13</td>
                                                 <td class="text-center">10</td>
                                                 <td class="text-center">
-                                                    <a href="/kaprodi/detailCategory" style="font-size: 12px;" class=" btn-small btn btn-info">Detail</a>
+                                                    <div class="row align-content-center">
+                                                        <div class="col">
+                                                            <a href="/kaprodi/detailCategory" class="btn btn-info btn-circle btn-sm">
+                                                                <i class="fas fa-info-circle"></i>
+                                                            </a> &nbsp;
+                                                            <a href="#" class="btn btn-warning btn-circle btn-sm">
+                                                                <i class="far fa-edit"></i>
+                                                            </a> &nbsp;
+                                                            <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                                                <i class="fas fa-trash"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr role="row" class="odd">
                                                 <td class="sorting_1 text-center">3</td>
                                                 <td>MBKM Kewirausahaan</td>
                                                 <td>Michael, Ph.D </td>
-                                                <td class="text-center">2021/2022</td>
                                                 <td class="text-center">98</td>
                                                 <td class="text-center">50</td>
                                                 <td class="text-center">20</td>
                                                 <td class="text-center">13</td>
                                                 <td class="text-center">10</td>
                                                 <td class="text-center">
-                                                    <a href="/kaprodi/detailCategory" style="font-size: 12px;" class=" btn-small btn btn-info">Detail</a>
+                                                    <div class="row align-content-center">
+                                                        <div class="col">
+                                                            <a href="/kaprodi/detailCategory" class="btn btn-info btn-circle btn-sm">
+                                                                <i class="fas fa-info-circle"></i>
+                                                            </a> &nbsp;
+                                                            <a href="#" class="btn btn-warning btn-circle btn-sm">
+                                                                <i class="far fa-edit"></i>
+                                                            </a> &nbsp;
+                                                            <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                                                <i class="fas fa-trash"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>

@@ -40,7 +40,7 @@
                 <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                     <div class="timeline-arrow"></div>
                     <a href="#" class="h5 mb-0 text-info">Rekomendasi Kaprodi</a><br>
-                    <span style="border-radius: 5px;" class="small text-white bg-info p-1"><i class="fa fa-clock-o mr-1"></i>Belum Diverifikasi</span> atau <a href="#" style="border-radius: 5px;" class="small text-white bg-primary p-1"><i class="fa fa-clock-o mr-1"></i>Download Rekomendasi</a>
+                    <span style="border-radius: 5px;" class="small text-white bg-info p-1"><i class="fa fa-clock-o mr-1"></i>Belum Diverifikasi</span> atau <a href="/mahasiswa/download_rekomendasi" style="border-radius: 5px;" class="small text-white bg-primary p-1"><i class="fa fa-clock-o mr-1"></i>Download Rekomendasi</a>
                     <p class="text-small mt-2 font-weight-light">Mohon tunggu verifikasi data dan hasil rekomendasi dari Kaprodi.
                         Apabila sudah diverifikasi maka akan muncul tombol download rekomendasi
                     </p>

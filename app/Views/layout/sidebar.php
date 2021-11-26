@@ -32,12 +32,6 @@ $session = \Config\Services::session();
             <span>Rekap Peserta</span>
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link my-1 py-1" href="/koordinator/alur_bantuan">
-            <i class="fab fa-stumbleupon-circle fa-fw"></i>
-            <span>Manual</span>
-        </a>
-    </li>
 <?php } ?>
 
 <!-- Menu Project Koordinator -->
@@ -59,12 +53,6 @@ $session = \Config\Services::session();
         <a class="nav-link my-1 py-1" href="/picproject/rekapPeserta">
             <i class="fab fa-stumbleupon-circle fa-fw"></i>
             <span>Rekap Peserta</span>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link my-1 py-1" href="/koordinator/alur_bantuan">
-            <i class="fab fa-stumbleupon-circle fa-fw"></i>
-            <span>Manual</span>
         </a>
     </li>
 <?php } ?>
@@ -149,7 +137,13 @@ $session = \Config\Services::session();
         </a>
     </li>
 <?php } ?>
-
+<!-- Manual -->
+<li class="nav-item">
+    <a class="nav-link my-1 py-1" href="/koordinator/alur_bantuan">
+        <i class="fab fa-stumbleupon-circle fa-fw"></i>
+        <span>Manual</span>
+    </a>
+</li>
 <!-- Tombol Logout -->
 <li class="nav-item">
     <a class="nav-link my-1 py-1" href="#" data-toggle="modal" data-target="#logoutModal">
